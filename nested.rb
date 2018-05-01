@@ -38,7 +38,7 @@ def alan_kay_is_known_for
         }
      }
      
-return programmer_hash[:alan_kay => {:known_for}]
+return programmer_hash[:alan_kay][:known_for]
 end
 
 def dennis_ritchies_language
@@ -57,6 +57,8 @@ def dennis_ritchies_language
           :languages => ["C"]
         }
      }
+     language = programmer_hash[:dennis_ritchie][:languages]
+return language.join("")
 end
 
 def adding_matz
@@ -123,5 +125,7 @@ def adding_to_dennis
           :languages => ["C"]
         }
      }
+     
+return [:dennis_ritchie][:languages]
 
 end
