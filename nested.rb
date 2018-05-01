@@ -87,7 +87,7 @@ def adding_matz
         }
      }
      new_hash = [:programmer_hash][:yukihiro_matsumoto]
-     return new_hash
+     return new_hash.to_s
     
 end
 
